@@ -71,10 +71,6 @@
         --color-gray-500: #6b7280;
         --color-gray-600: #4b5563;
       }
-
-
-
-      
     </style>
 
     <script>
@@ -191,6 +187,7 @@
         align-items: center;
         overflow: hidden;
 
+        background-image: url("https://cdn.sanity.io/images/e1syw5oe/~production/b062a471dcdf390a40a4f9dc6504b4da7892e427-4100x2050.png");
         background-image: url("image2.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -492,7 +489,7 @@
         letter-spacing: 0.2em;
         text-transform: uppercase;
         font-weight: 600;
-        color: var(--color-accent);
+        color: var(--color-surface);
         margin-bottom: 1rem;
       }
       .section-eyebrow::before {
@@ -500,7 +497,7 @@
         display: inline-block;
         width: 2rem;
         height: 1px;
-        background: var(--color-accent);
+        background: var(--color-surface);
       }
       .section-heading {
         font-family: "Playfair Display", serif;
@@ -616,7 +613,7 @@
        NAVBAR
   ══════════════════════════════════ -->
       <header
-        class="fixed top-0 left-0 right-0 z-50 h-[78px] transition-shadow duration-300"
+        class="fixed top-0 left-0 right-0 z-50 transition-shadow duration-300"
         style="background: var(--color-primary)"
         :class="{ 'shadow-[0_2px_20px_rgba(0,0,0,0.5)]': scrolled }"
       >
@@ -629,29 +626,39 @@
                 style="border: 1px solid var(--color-accent)"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <!-- Aguja -->
                   <line
-                    x1="8"
-                    y1="0"
-                    x2="8"
-                    y2="16"
+                    x1="5"
+                    y1="1"
+                    x2="11"
+                    y2="15"
+                    stroke="var(--color-accent)"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+
+                  <!-- Ojo -->
+                  <ellipse
+                    cx="5.7"
+                    cy="2.6"
+                    rx="0.9"
+                    ry="0.6"
+                    transform="rotate(23 5.7 2.6)"
+                    stroke="var(--color-accent)"
+                    stroke-width="0.8"
+                    fill="none"
+                  />
+
+                  <!-- Hilo -->
+                  <path
+                    d="M5.7 2.6
+       C2.5 2.8 1.2 5.4 2.6 7.2
+       C4.2 9.2 7.4 8.8 8.2 10.8
+       C8.8 12.4 7.8 13.8 6.2 15"
                     stroke="var(--color-accent)"
                     stroke-width="1"
-                  />
-                  <line
-                    x1="0"
-                    y1="8"
-                    x2="16"
-                    y2="8"
-                    stroke="var(--color-accent)"
-                    stroke-width="1"
-                  />
-                  <rect
-                    x="3"
-                    y="3"
-                    width="10"
-                    height="10"
-                    stroke="var(--color-accent)"
-                    stroke-width="0.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     fill="none"
                   />
                 </svg>
@@ -797,11 +804,11 @@
                   display: inline-block;
                   width: 2rem;
                   height: 1px;
-                  background: var(--color-accent);
+                  background: var(--color-surface);
                   margin-right: 0.75rem;
                 "
               ></span>
-              Bespoke Window Treatments
+              Cortinas y Persianas a Medida
             </div>
 
             <h1 class="hero-headline mb-6">
@@ -1326,7 +1333,7 @@
                 <span
                   class="font-display text-xl tracking-widest font-semibold"
                   style="color: var(--color-surface)"
-                  >LUMINAE</span
+                  >SERGIO</span
                 >
               </div>
               <p
@@ -1438,10 +1445,10 @@
 
           // ── Hero stats ──
           const heroStats = [
-            { value: "25+", label: "Years Crafting" },
-            { value: "18K+", label: "Installations" },
-            { value: "300+", label: "Fabric Choices" },
-            { value: "100%", label: "Custom Made" },
+            { value: "25+", label: "Años de Experiencia" },
+            { value: "18K+", label: "Proyectos Instalados" },
+            { value: "300+", label: "Tipos de Telas" },
+            { value: "100%", label: "Personalizado" },
           ];
 
           // ── Collections ──
